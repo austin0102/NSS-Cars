@@ -1,0 +1,44 @@
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.order {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+#logo {
+    height: 100px;
+    width: auto;
+}
+body {
+    background-color: #616365;
+}
+
+.main-content {
+    border: 5px solid black;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: #8a8c8d;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.customOrders {
+        text-align: center;
+        border: 5px solid black;
+        padding: 5px;
+        border-radius: 25px;
+        background-color: #8a8c8d;
+    }
+    
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+#bottom-pic {
+    
+}

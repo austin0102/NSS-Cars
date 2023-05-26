@@ -3,6 +3,7 @@ const TransientState = {
     technologyId: 0,
     wheelId: 0,
     interiorId: 0,
+    rideId: 0,
 }
 
 export const setPaintId = (chosenPaint) => {
@@ -17,6 +18,9 @@ export const setWheelsId = (chosenWheels) => {
 }
 export const setInteriorId = (chosenInterior) => {
     TransientState.interiorId = chosenInterior
+}
+export const setRideId = (chosenType) => {
+  TransientState.rideId = chosenType
 }
 
 export const placeOrder = async () => {

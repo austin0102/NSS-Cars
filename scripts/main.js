@@ -4,6 +4,7 @@ import { Paint } from "./Paints.js";
 import { Wheels } from "./Wheels.js";
 import { placeOrderButton } from "./SaveOrders.js";
 import { orders } from "./OrdersList.js";
+import { types } from "./Types.js";
 
 const container = document.querySelector("#container");
 
@@ -14,11 +15,17 @@ const render = async () => {
     const wheelsHTML = await Wheels()
     const OrderButton = placeOrderButton()
     const ordersList = await orders()
+    const typesList = await types()
 
   const composedHTML = `
         <h1>Cars Are Us</h1>
+            <div class="main-content">
+            <article class="choices">
+                <section class="choices__type options">
+                <h2>Vehicle Type</h2>
+                ${typesList}
+            </section>
 
-        <article class="choices">
             <section class="choices__tech options">
                 <h2>Tech Packages</h2>
                 ${techHTML}
@@ -43,7 +50,7 @@ const render = async () => {
         <article class="order">
         ${OrderButton}
         </article>
-
+        </div>
         <article class="customOrders">
             <h2>Orders</h2>
             ${ordersList}
